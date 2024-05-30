@@ -111,10 +111,12 @@ window.onload = function() {
   });
 
   window.addEventListener("scroll", () => {
+   
     if (
-      window.scrollY + window.innerHeight >=
-      document.documentElement.scrollHeight
+    ( window.scrollY + window.innerHeight) ==
+     document.body.scrollHeight
     ) {
+      console.log('hey we get got the bottom')
       const reveals = document.querySelectorAll(".reveal");
       for (let i = 0; i < reveals.length; i++) {
         reveals[i].classList.add("active");
