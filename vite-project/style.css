@@ -440,7 +440,8 @@
   }
   
   .featured_text {
-  font-size: 2.5em;
+  font-size: 3.0em;
+  font-weight: 600;
   white-space: nowrap;
   color: rgb(97, 97, 97);
   }
