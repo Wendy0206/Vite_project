@@ -266,12 +266,7 @@
   
   .darkMode {
   cursor: pointer;
-  width: 30px;
-  height: 30px;
-  display: inline-block;
-  background: linear-gradient(to right bottom, #b1b8ca 50%, #1a261d 50%);
-  border-radius: 50%;
-  transform: rotate(-45deg);
+  font-size: 40px;
   }
   
   .theBoard {
@@ -325,7 +320,8 @@
   }
   
   .descr_p {
-  font-size: 2em;
+  font-size: 2.8em;
+  font-weight: 500;
   font-family: "OpenSansCondensed-Bold";
   color: var(--icon-hover-bg);
   padding: 4px;
@@ -824,6 +820,7 @@
   }
   }
   @media screen and (min-width: 320px) and (max-width: 786px) {
+
   .home_div,
   .about_div,
   .all_project_div {
@@ -836,6 +833,13 @@
   align-content: center;
   }
   
+
+  .descr_p {
+    font-size: 2.0em;
+    font-weight: 600;
+    
+    }
+
   .header_style {
   font-size: 10em;
   white-space: nowrap;

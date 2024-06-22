@@ -61,6 +61,8 @@ window.onload = function() {
     const hiLine = document.querySelectorAll(".line_hi");
 
     if (currentMode === 1) {
+      darkMode.classList.remove("fa-moon");
+      darkMode.classList.add("fa-sun");
       homeLeft.style.backgroundColor = "#1a261d";
       project.style.backgroundColor = "#1a261d";
       footerS.style.backgroundColor = "#1a261d";
@@ -85,6 +87,8 @@ window.onload = function() {
       document.documentElement.style.setProperty("--color", "white");
       currentMode = 0;
     } else {
+      darkMode.classList.remove("fa-remove");
+      darkMode.classList.add("fa-moon");
       homeLeft.style.backgroundColor = "rgba(33, 96, 47, 0.51)";
       project.style.backgroundColor = "rgba(33, 96, 47, 0.51)";
       footerS.style.backgroundColor = "rgba(33, 96, 47, 0.51)";
