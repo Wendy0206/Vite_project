@@ -27,6 +27,27 @@ window.onload = function() {
     showInfo[1].classList.remove("show_project_info");
   });
 
+  imageHover[3].addEventListener("mouseover", () => {
+    showInfo[3].classList.add("show_project_info");
+    showInfo[4].classList.remove("show_project_info");
+    showInfo[5].classList.remove("show_project_info");
+    
+  });
+
+  imageHover[4].addEventListener("mouseover", () => {
+    showInfo[4].classList.add("show_project_info");
+    showInfo[3].classList.remove("show_project_info");
+    showInfo[5].classList.remove("show_project_info");
+   
+  });
+
+  imageHover[5].addEventListener("mouseover", () => {
+    showInfo[5].classList.add("show_project_info");
+    showInfo[3].classList.remove("show_project_info");
+    showInfo[4].classList.remove("show_project_info");
+  });
+
+
   for (let i = 0; i < imageHover.length; i++) {
     showInfo[i].addEventListener("mouseleave", () => {
       showInfo[i].classList.remove("show_project_info");
@@ -64,7 +85,8 @@ window.onload = function() {
       darkMode.classList.remove("fa-moon");
       darkMode.classList.add("fa-sun");
       homeLeft.style.backgroundColor = "#1a261d";
-      project.style.backgroundColor = "#1a261d";
+      project[0].style.backgroundColor = "#1a261d";
+      project[1].style.backgroundColor = "#1a261d";
       footerS.style.backgroundColor = "#1a261d";
       submit.style.backgroundColor = "#1a261d";
       footerYear.style.color = "white";
@@ -90,7 +112,8 @@ window.onload = function() {
       darkMode.classList.remove("fa-remove");
       darkMode.classList.add("fa-moon");
       homeLeft.style.backgroundColor = "rgba(33, 96, 47, 0.51)";
-      project.style.backgroundColor = "rgba(33, 96, 47, 0.51)";
+      project[0].style.backgroundColor = "rgba(33, 96, 47, 0.51)";
+      project[1].style.backgroundColor = "rgba(33, 96, 47, 0.51)";
       footerS.style.backgroundColor = "rgba(33, 96, 47, 0.51)";
       submit.style.backgroundColor = "rgba(33, 96, 47, 0.51)";
 
