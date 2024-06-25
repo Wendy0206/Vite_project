@@ -98,6 +98,7 @@ window.onload = function() {
       hiLine[0].style.color = "white";
       hiLine[1].style.color = "white";
       hiLine[2].style.color = "white";
+      hiLine[3].style.color = "white";
       container.classList.toggle("dark_mode");
       inputBg.forEach(element => {
         element.style.backgroundColor = "rgba(33, 96, 47, 0.51)";
@@ -126,6 +127,7 @@ window.onload = function() {
       hiLine[0].style.color = "black";
       hiLine[1].style.color = "black";
       hiLine[2].style.color = "black";
+      hiLine[3].style.color = "black";
       social[0].style.color = "black";
       social[1].style.color = "black";
       social[2].style.color = "black";
