@@ -141,16 +141,24 @@ window.onload = function() {
 
   window.addEventListener("scroll", () => {
    
-    if (
-    ( window.scrollY + window.innerHeight) ==
-     document.body.scrollHeight
-    ) {
-      console.log('hey we get got the bottom')
-      const reveals = document.querySelectorAll(".reveal");
-      for (let i = 0; i < reveals.length; i++) {
-        reveals[i].classList.add("active");
-      }
+ 
+   // @var int totalPageHeight
+   var totalPageHeight = document.body.scrollHeight; 
+
+   // @var int scrollPoint
+   var scrollPoint = window.scrollY + window.innerHeight;
+
+   // check if we hit the bottom of the page
+   if(scrollPoint >= totalPageHeight){
+    const reveals = document.querySelectorAll(".reveal");
+    for (let i = 0; i < reveals.length; i++) {
+      reveals[i].classList.add("active");
     }
+   }
+
+
+
+    
   });
 
   submit.addEventListener("click", () => {
