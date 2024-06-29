@@ -9,26 +9,41 @@ window.onload = function() {
   const imageHover = document.querySelectorAll(".project_img_div");
   const showInfo = document.querySelectorAll(".project_info_div");
 
+// showInfo.filter((elm,ind)=> ind!=0)
+
+
   imageHover[0].addEventListener("mouseover", () => {
     showInfo[0].classList.add("show_project_info");
     showInfo[1].classList.remove("show_project_info");
     showInfo[2].classList.remove("show_project_info");
+    showInfo[3].classList.remove("show_project_info");
+    showInfo[4].classList.remove("show_project_info");
+    showInfo[5].classList.remove("show_project_info");
   });
 
   imageHover[1].addEventListener("mouseover", () => {
     showInfo[1].classList.add("show_project_info");
     showInfo[0].classList.remove("show_project_info");
     showInfo[2].classList.remove("show_project_info");
+    showInfo[3].classList.remove("show_project_info");
+    showInfo[4].classList.remove("show_project_info");
+    showInfo[5].classList.remove("show_project_info");
   });
 
   imageHover[2].addEventListener("mouseover", () => {
     showInfo[2].classList.add("show_project_info");
     showInfo[0].classList.remove("show_project_info");
     showInfo[1].classList.remove("show_project_info");
+    showInfo[3].classList.remove("show_project_info");
+    showInfo[4].classList.remove("show_project_info");
+    showInfo[5].classList.remove("show_project_info");
   });
 
   imageHover[3].addEventListener("mouseover", () => {
     showInfo[3].classList.add("show_project_info");
+    showInfo[0].classList.remove("show_project_info");
+    showInfo[1].classList.remove("show_project_info");
+    showInfo[2].classList.remove("show_project_info");
     showInfo[4].classList.remove("show_project_info");
     showInfo[5].classList.remove("show_project_info");
     
@@ -36,6 +51,9 @@ window.onload = function() {
 
   imageHover[4].addEventListener("mouseover", () => {
     showInfo[4].classList.add("show_project_info");
+    showInfo[0].classList.remove("show_project_info");
+    showInfo[1].classList.remove("show_project_info");
+    showInfo[2].classList.remove("show_project_info");
     showInfo[3].classList.remove("show_project_info");
     showInfo[5].classList.remove("show_project_info");
    
@@ -43,6 +61,9 @@ window.onload = function() {
 
   imageHover[5].addEventListener("mouseover", () => {
     showInfo[5].classList.add("show_project_info");
+    showInfo[0].classList.remove("show_project_info");
+    showInfo[1].classList.remove("show_project_info");
+    showInfo[2].classList.remove("show_project_info");
     showInfo[3].classList.remove("show_project_info");
     showInfo[4].classList.remove("show_project_info");
   });
@@ -84,6 +105,7 @@ window.onload = function() {
     if (currentMode === 1) {
       darkMode.classList.remove("fa-moon");
       darkMode.classList.add("fa-sun");
+      darkMode.classList.add("text-light");
       homeLeft.style.backgroundColor = "#1a261d";
       project[0].style.backgroundColor = "#1a261d";
       project[1].style.backgroundColor = "#1a261d";
@@ -110,7 +132,8 @@ window.onload = function() {
       document.documentElement.style.setProperty("--color", "white");
       currentMode = 0;
     } else {
-      darkMode.classList.remove("fa-remove");
+      darkMode.classList.remove("fa-sun");
+      darkMode.classList.remove("text-light");
       darkMode.classList.add("fa-moon");
       homeLeft.style.backgroundColor = "rgba(33, 96, 47, 0.51)";
       project[0].style.backgroundColor = "rgba(33, 96, 47, 0.51)";
@@ -161,9 +184,9 @@ window.onload = function() {
     
   });
 
-  submit.addEventListener("click", () => {
-    // const comment = document.querySelector(".comment_in");
-    // const phone = document.querySelector(".phone_in");
-    // const email = document.querySelector(".email_in");
-  });
+  // submit.addEventListener("click", () => {
+  //   // const comment = document.querySelector(".comment_in");
+  //   // const phone = document.querySelector(".phone_in");
+  //   // const email = document.querySelector(".email_in");
+  // });
 };
